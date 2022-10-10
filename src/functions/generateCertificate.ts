@@ -17,7 +17,7 @@ export const handler: APIGatewayProxyHandler = async (event) => {
         id,
         name,
         grade,
-        create_at: new Date(),
+        create_at: new Date().getTime(),
       },
     })
     .promise();
